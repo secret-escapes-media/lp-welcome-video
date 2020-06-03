@@ -11,11 +11,12 @@ banner:
   title: >
     <h1 class="h h--xl">We can’t wait to welcome you back</h1>
   content: >
-    <p class="p--xxl">As restrictions begin to ease, our thoughts are turning to travel, and while that might not mean today, we're hoping it will be very soon. In preparation for that day, we've reach out to our hotel partners, colleagues and friends to find out what they've missed most, and what they're doing in preparation to welcome you back safely. Watch the video now:</p>
-    <div class="space--sm"></div>
-    <a href="#" class="btn">Watch now</a>
+    <p class="p--xxl">As restrictions begin to ease, our thoughts are turning to travel, and while that might not mean today, we're hoping it will be very soon. In preparation for that day, we've reach out to our hotel partners, colleagues and friends to find out what they've missed most, and what they're doing in preparation to welcome you back safely.</p>
+    <div class="space--md"></div>
+    <a href="javascript:void(0);" class="btn btn--lg js-open-modal" data-open-modal="video">Watch the video now</a>
 
 
+deals-title: Our hotels that are ready & waiting
 
 deals-banner:
   title: View our selection of refundable deals now
@@ -23,6 +24,11 @@ deals-banner:
   cta: View deals
 
 
+
+
+articles-intro:
+  title: Peek through the keyhole
+  content: If you'd like to find out more about how our hotels are preparing for your arrival, you can read the full interviews as part of our new 'Through the keyhole' series on our magazine.
 
 articles:
 
@@ -40,12 +46,6 @@ articles:
 
 
 
-terms:
-  title: Terms & conditions
-  content: Valid on bookings made before 1/9/20 on trips that take place on any date during 2020.  On return from that trip, a £50 credit will be applied to your account, which will be valid for 6 months on any future bookings over £250
-
-
-
 ---
 
 
@@ -58,7 +58,7 @@ terms:
 
   <div class="row">
     <div class="col col--9 text--center">
-      <h2 class="h h--md">The hotels that are ready & waiting</h2>
+      <h2 class="h h--md">{{page.deals-title}}</h2>
     </div>
   </div>
   <div class="space--lg"></div>
@@ -94,8 +94,8 @@ terms:
 
     <div class="row">
       <div class="col col--9 text--center">
-        <h2 class="h h--md">Peak through the keyhole</h2>
-        <p class="p--lg">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+        <h2 class="h h--md">{{page.articles-intro.title}}</h2>
+        <p class="p--lg">{{page.articles-intro.content}}</p>
       </div>
     </div>
     <div class="space--lg"></div>
@@ -114,7 +114,7 @@ terms:
     <div class="space--xl"></div>
 
     <div class="text--center">
-      <a href="#" class="btn">Read more</a>
+      <a href="https://www.secretescapes.com/magazine-uk/" target="_blank" class="btn">Read more</a>
     </div>
 
   </div>

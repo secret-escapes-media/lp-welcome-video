@@ -26,6 +26,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &-inner {
+      width: 100%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
   }
 
   @include bp($xl){
@@ -38,10 +45,6 @@
       width: 20%;
       min-width: 368px;
       opacity: 1;
-      @include transition;
-      .video-active & {
-        opacity: 0.5;
-      }
     }
     &__left { right: 50%; margin-right: 362px; }
     &__right { left: 50%; margin-left: 362px; }
@@ -53,10 +56,6 @@
       min-width: 720px;
       max-width: 960px;
       @include page-padding;
-      @include transition;
-      .video-active & {
-        width: 100%;
-      }
     }
   }
 
@@ -76,16 +75,6 @@
       width: 50%;
       min-width: 50%;
       max-width: 1080px;
-      .video-active & {
-        width: 100%;
-      }
-      &-inner {
-        width: 100%;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-      }
     }
   }
 
@@ -93,7 +82,6 @@
   // Video
   &__video {
     @include background-attributes;
-    @include transition;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +90,6 @@
     border: 4px solid $white;
     &:before {
       content: "";
-      @include transition;
       display: block;
       width: 100%;
       padding-top: 56.25%;
@@ -115,7 +102,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      .video-active & { display: none; }
     }
     &-btn {
       position: absolute;
@@ -130,13 +116,6 @@
         padding-top: 100%;
       }
     }
-    &-iframe {
-      position: absolute;
-      top: 0; left: 0;
-      z-index: 1;
-      opacity: 0;
-      .video-active & { opacity: 1; }
-    }
 
     @include bp($lg){
       position: absolute;
@@ -149,10 +128,6 @@
         width: 100%;
         padding-top: 100%;
       }
-      .video-active & {
-        width: 100%;
-        &:before { padding-top: 56.25%; }
-      }
     }
   }
 
@@ -160,7 +135,6 @@
   &__window {
     display: none;
     @include bp($lg){
-      @include transition;
       display: block;
       position: relative;
       width: 100%;
@@ -174,10 +148,6 @@
         display: block;
         width: 100%;
         padding-top: 66.52760356%;
-      }
-      .video-active & {
-        opacity: 0;
-        &:before { padding-top: 56.25%; }
       }
 
     }
