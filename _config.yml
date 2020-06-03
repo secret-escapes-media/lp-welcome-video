@@ -1,0 +1,21 @@
+# Site settings
+title: Secret Escapes
+locale: uk
+
+description: Book any trip and we'll give you £50 credit to use towards the next one
+
+# file paths
+url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
+baseurl: "/uk/2020/welcome-back-gift" # the subpath of your site, e.g. /blog/
+img:     "/uk/2020/welcome-back-gift/_assets/img"
+css:     "/uk/2020/welcome-back-gift/_assets/css"
+js:      "/uk/2020/welcome-back-gift/_assets/js"
+
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
+keep_files: [_assets]
+sass:
+    sass_dir: css
+    style: compressed

@@ -1,0 +1,28 @@
+// general styles for the project that wouldn't be a reuseable component
+
+.billboard {
+  &__icon {
+    width: 30%;
+    max-width: 50px;
+    margin: auto;
+    margin-bottom: $s2;
+    @include bp($lg){
+      max-width: 80px;
+    }
+  }
+}
+
+.card {
+  display: block;
+  position: relative;
+
+  &__icon {
+    width: 50%;
+    max-width: 60px;
+    margin: auto;
+    margin-bottom: $s2;
+  }
+  &__content {
+    text-align: center;
+  }
+}

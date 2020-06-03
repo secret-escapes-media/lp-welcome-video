@@ -1,0 +1,124 @@
+---
+layout: default
+id: welcome-video
+locale: uk
+
+
+title: We can’t wait to welcome you back
+
+
+banner:
+  title: >
+    <h1 class="h h--xl">We can’t wait to welcome you back</h1>
+  content: >
+    <p class="p--xxl">As restrictions begin to ease, our thoughts are turning to travel, and while that might not mean today, we're hoping it will be very soon. In preparation for that day, we've reach out to our hotel partners, colleagues and friends to find out what they've missed most, and what they're doing in preparation to welcome you back safely. Watch the video now:</p>
+    <div class="space--sm"></div>
+    <a href="#" class="btn">Watch now</a>
+
+
+
+deals-banner:
+  title: View our selection of refundable deals now
+  content:
+  cta: View deals
+
+
+
+articles:
+
+  - id: 1
+    title: Hotel name
+    content: Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+  - id: 2
+    title: Hotel name
+    content: Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+  - id: 3
+    title: Hotel name
+    content: Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+
+
+terms:
+  title: Terms & conditions
+  content: Valid on bookings made before 1/9/20 on trips that take place on any date during 2020.  On return from that trip, a £50 credit will be applied to your account, which will be valid for 6 months on any future bookings over £250
+
+
+
+---
+
+
+{% include nav/header.html %}
+{% include page/banner.html %}
+
+
+<div class="bg--grey-lightest vpad--xxl">
+<div class="container">
+
+  <div class="row">
+    <div class="col col--9 text--center">
+      <h2 class="h h--md">The hotels that are ready & waiting</h2>
+    </div>
+  </div>
+  <div class="space--lg"></div>
+
+  <div class="row row--6-6">
+  {% for offer in site.data.offers %}
+    <div class="col">
+      {% include offer/offer.html%}
+    </div>
+  {% endfor %}
+  </div>
+
+  <div class="space--lg"></div>
+
+  <div class="img img--1-1 img--lg-3-2 img--xxl-3-1 depth--sm rounded--sm" style="background-image: url({{site.img}}/{{page.id}}/deals.jpg);">
+    <a href="{{locale.core-site}}" class="img__link"></a>
+    <div class="img__content">
+      <div class="width width--lg boxpad--lg text--center">
+        <h3 class="h h--lg">{{page.deals-banner.title}}</h3>
+        {% if page.deals-banner.content %}<p class="p--xl">{{page.deals-banner.content}}</p>{% endif %}
+        <div class="space--sm"></div>
+        <a href="{{locale.core-site}}" class="btn btn--primary">{{page.deals-banner.cta}}</a>
+      </div>
+    </div>
+    <div class="img__overlay"></div>
+  </div>
+
+</div> <!-- /.container -->
+</div> <!-- /.bg--grey-lightest -->
+
+<div class="bg--white vpad--xxl">
+  <div class="container">
+
+    <div class="row">
+      <div class="col col--9 text--center">
+        <h2 class="h h--md">Peak through the keyhole</h2>
+        <p class="p--lg">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+      </div>
+    </div>
+    <div class="space--lg"></div>
+    <div class="row">
+    {% for article in page.articles %}
+      <div class="col col--xl-4">
+        <div class="img img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
+        <div class="space--sm"></div>
+        <h3 class="h h--xxs">{{article.title}}</h3>
+        <p>{{article.content}}</p>
+        <p><a href="{{article.link}}">Continue reading</a></p>
+      </div>
+    {% endfor %}
+    </div>
+
+    <div class="space--xl"></div>
+
+    <div class="text--center">
+      <a href="#" class="btn">Read more</a>
+    </div>
+
+  </div>
+</div><!-- /.container -->
+
+{% include nav/footer.html %}
+</div> <!-- /.bg--grey-lightest -->
