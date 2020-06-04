@@ -6,10 +6,10 @@ description: Book any trip and we'll give you £50 credit to use towards the nex
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2020/welcome-back-gift" # the subpath of your site, e.g. /blog/
-img:     "/uk/2020/welcome-back-gift/_assets/img"
-css:     "/uk/2020/welcome-back-gift/_assets/css"
-js:      "/uk/2020/welcome-back-gift/_assets/js"
+baseurl: "/uk/2020/welcome-back" # the subpath of your site, e.g. /blog/
+img:     "/uk/2020/welcome-back/_assets/img"
+css:     "/uk/2020/welcome-back/_assets/css"
+js:      "/uk/2020/welcome-back/_assets/js"
 
 
 # Build settings

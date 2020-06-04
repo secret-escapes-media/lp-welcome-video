@@ -27,7 +27,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/uk/2020/welcome-back-gift': '_site/'
+        '/uk/2020/welcome-back': '_site/'
       }
     }
   });
