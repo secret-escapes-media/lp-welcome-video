@@ -1,5 +1,9 @@
 // general styles for the project that wouldn't be a reuseable component
 
+.hideApp {
+  .fromApp & { display: none; }
+}
+
 .billboard {
   &__icon {
     width: 30%;

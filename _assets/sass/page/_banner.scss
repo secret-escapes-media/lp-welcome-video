@@ -7,6 +7,7 @@
   margin: auto;
   overflow: hidden;
   color: $white;
+  .fromApp & { padding-top: $s4; }
 
   &__container {
     position: relative;
@@ -20,6 +21,7 @@
     display: none
   }
   &__center {
+    @include transition;
     position: relative;
     margin: auto;
     width: 100%;
@@ -53,6 +55,7 @@
       width: 20%;
       min-width: 368px;
       opacity: 1;
+      .video-playing & { opacity: 0.5; }
     }
     &__left { right: 50%; margin-right: 362px; }
     &__right { left: 50%; margin-left: 362px; }
@@ -64,12 +67,14 @@
       min-width: 720px;
       max-width: 960px;
       @include page-padding;
+      .video-playing & { width: 75%; }
     }
   }
 
   @include bp($xxxxl){
     &__left,
     &__right {
+      @include transition;
       position: absolute;
       width: 25%;
       min-width: 25%;
@@ -83,12 +88,13 @@
       width: 50%;
       min-width: 50%;
       max-width: 1080px;
+      .video-playing & { width: 100%; }
     }
   }
 
 
   // Video
-  &__video {
+  &__play {
     @include background-attributes;
     display: flex;
     align-items: center;
@@ -96,11 +102,22 @@
     width: 100%;
     margin: auto;
     border: 4px solid $white;
+    @include bp($lg){
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      z-index: 10;
+      width: 59.98930948%;
+    }
+
     &:before {
       content: "";
       display: block;
       width: 100%;
       padding-top: 56.25%;
+      @include bp($lg){
+        padding-top: 100%;
+      }
     }
     &-link {
       position: absolute;
@@ -118,22 +135,6 @@
       @include background-attributes;
       &:before {
         content: "";
-        display: block;
-        width: 100%;
-        padding-top: 100%;
-      }
-    }
-
-    @include bp($lg){
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      z-index: 10;
-      width: 59.98930948%;
-      &:before {
-        content: "";
-        @include transition;
         display: block;
         width: 100%;
         padding-top: 100%;
@@ -175,6 +176,15 @@
         }
       }
     }
+  }
+
+
+  &__video {
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    display: none;
+    box-shadow: 0 0 60px 10px $black;
   }
 
 }

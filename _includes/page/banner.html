@@ -22,15 +22,20 @@
       <div class="banner__center">
         <div class="banner__center-inner">
 
-        <div class="banner__video rounded--xxxl" style="background-image: url({{site.img}}/{{page.id}}/banner-video.jpg);">
-          <a href="javascript:void(0);" class="banner__video-link js-open-modal" data-open-modal="video">
-            <div class="banner__video-btn"></div>
-          </a>
-        </div>
+          <div class="banner__play rounded--xxxl" style="background-image: url({{site.img}}/{{page.id}}/banner-video.jpg);">
+            <a href="javascript:void(0);" class="banner__play-link js-play-video">
+              <div class="banner__play-btn"></div>
+            </a>
+          </div>
 
-        <div class="banner__window">
-          {% include page/window-svg.html %}
-        </div>
+          <div class="banner__window">
+            {% include page/window-svg.html %}
+          </div>
+
+          <div class="banner__video">
+            <div id="ytPlayer"></div>
+          </div>
+
         </div>
       </div>
 
@@ -60,3 +65,50 @@
   </div>
 
 </div>
+
+
+
+
+
+<script>
+  var tag = document.createElement('script');
+
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var ytPlayer;
+  function onYouTubeIframeAPIReady() {
+    ytPlayer = new YT.Player('ytPlayer', {
+      height: '100%',
+      width: '100%',
+      videoId: 'jVktupBOcv0',
+      playerVars: {
+        rel: 0,
+        modestbranding: 1
+      },
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+
+  var done = false;
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.ENDED && !done) {
+        $('body').removeClass('disable-scroll');
+        // close modal
+        $('.modal__bg.is-open').hide();
+        // close modal and active modal content
+        $('modal__bg').removeClass('is-open').addClass('is-closed');
+        $('.modal.is-open').removeClass('is-open').addClass('is-closed');
+        // kill everything inside of video if its there
+        ytPlayer.pauseVideo();
+        done = true;
+      }
+    }
+
+  function stopVideo() {
+    ytPlayer.stopVideo();
+  }
+</script>

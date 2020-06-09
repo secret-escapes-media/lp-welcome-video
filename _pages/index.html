@@ -13,10 +13,10 @@ banner:
   content: >
     <p class="p--xxl">As restrictions begin to ease, our thoughts are turning to travel, and while that might not mean today, we're hoping it will be very soon. In preparation for that day, we've reach out to our hotel partners, colleagues and friends to find out what they've missed most, and what they're doing in preparation to welcome you back safely.</p>
     <div class="space--md"></div>
-    <a href="javascript:void(0);" class="btn btn--lg js-open-modal" data-open-modal="video">Watch the video now</a>
+    <a href="javascript:void(0);" class="btn btn--lg js-play-video">Watch now</a>
 
 
-deals-title: Our hotels that are ready & waiting
+deals-title: Our hotels are ready & waiting
 
 deals-banner:
   title: View our selection of refundable deals now
@@ -55,6 +55,7 @@ articles:
 {% include nav/header.html %}
 {% include page/banner.html %}
 
+<div class="hideApp">
 
 <div class="bg--grey-lightest vpad--xxl">
 <div class="container">
@@ -75,7 +76,6 @@ articles:
   </div>
 
   <div class="space--lg"></div>
-
   {% include page/promo-offers.html %}
 
 </div> <!-- /.container -->
@@ -113,6 +113,7 @@ articles:
 
   </div>
 </div><!-- /.container -->
+</div><!-- /.hideApp -->
 
 {% include nav/footer.html %}
 </div> <!-- /.bg--grey-lightest -->

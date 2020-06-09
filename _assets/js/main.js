@@ -10,8 +10,7 @@ $(document).ready(function(){
 
 
 
-var modalQueryString = 'fromApp';
-if (getQueryStringByName(modalQueryString)) {
+if (getQueryStringByName('fromApp')) {
   $('body').addClass('fromApp');
 }
 
@@ -19,6 +18,29 @@ if (getQueryStringByName(modalQueryString)) {
 $('.js-play').click(function(){
   $('.banner').toggleClass('video-active');
 });
+
+
+
+
+///////////////////////////////////////
+//    Video
+///////////////////////////////////////
+
+function videoPlay(){
+  $('.banner').addClass('video-playing');
+  $('.banner__play').fadeOut();
+  $('.banner__window').fadeOut();
+  $('.banner__video').fadeIn();
+  ytPlayer.playVideo();
+}
+
+$('.js-play-video').click(function(){
+  videoPlay();
+});
+
+if (getQueryStringByName('video')) {
+  videoPlay();
+}
 
 
 
@@ -33,4 +55,6 @@ $('.banner__window-path').each(function(){
   $(this).css({ 'stroke-dasharray': length });
   $(this).css({ 'stroke-dashoffset': length });
 });
+
+
 
