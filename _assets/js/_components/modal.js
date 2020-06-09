@@ -21,22 +21,17 @@ function modalOpen(event, modalId){
   // disable scrolling on background content (doesn't work iOS)
   $('body').addClass('disable-scroll');
 
-  // builds youtube video if needed
+  // autostarts youtube
   if (activeModal.data('youtube-id')) {
-    // get youtube id and target div
-    var video     = activeModal.find('.js-modal-video'),
-        youtubeId = activeModal.data('youtube-id');
-    // insert the code into the target with the id and autoplay
-    video.html('<div class="video__wrap"><iframe class="video" src="https://www.youtube.com/embed/' + youtubeId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>');
+    ytPlayer.playVideo();
   }
 
   // reveal the specific modal content
   activeModal.removeClass('is-closed').addClass('is-open');
 
   // open modal
-  modal.fadeIn('250', function(){
-    $(this).removeClass('is-closed').addClass('is-open');
-  });
+  modal.show();
+  $(modal).removeClass('is-closed').addClass('is-open');
 }
 
 // closes modal
@@ -44,14 +39,13 @@ function modalClose(event){
   event.preventDefault();
   // enable scrolling
   $('body').removeClass('disable-scroll');
-  // close modal with fade
-  $('.modal__bg.is-open').fadeOut('250', function(){
-    // close modal and active modal content
-    $(this).removeClass('is-open').addClass('is-closed');
-    $('.modal.is-open').removeClass('is-open').addClass('is-closed');
-    // kill everything inside of video if its there
-    $('.js-modal-video').empty();
-  });
+  // close modal
+  $('.modal__bg.is-open').hide();
+  // close modal and active modal content
+  $('modal__bg').removeClass('is-open').addClass('is-closed');
+  $('.modal.is-open').removeClass('is-open').addClass('is-closed');
+  // kill everything inside of video if its there
+  ytPlayer.pauseVideo();
 }
 
 

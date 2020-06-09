@@ -32,6 +32,14 @@
       align-items: center;
       justify-content: center;
       display: flex;
+      @include bp($lg){
+        &:before {
+          content: "";
+          display: block;
+          width: 100%;
+          padding-top: 66.49240727%;
+        }
+      }
     }
   }
 
@@ -104,7 +112,6 @@
       justify-content: center;
     }
     &-btn {
-      position: absolute;
       width: 50%;
       max-width: 80px;
       background-image: url('../img/icons/play.svg');
@@ -119,6 +126,9 @@
 
     @include bp($lg){
       position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
       z-index: 10;
       width: 59.98930948%;
       &:before {
@@ -136,15 +146,11 @@
     display: none;
     @include bp($lg){
       display: block;
-      position: relative;
+      position: absolute;
+      top: 0; left: 0;
+      right: 0; bottom: 0;
       width: 100%;
       z-index: 0;
-      &:before {
-        content: "";
-        display: block;
-        width: 100%;
-        padding-top: 66.52760356%;
-      }
 
       & svg {
         position: absolute;
@@ -159,7 +165,9 @@
         stroke-linejoin:round;
         // stroke-dasharray: 10000;
         // stroke-dashoffset: 10000;
-        animation: dash 3s linear forwards;
+        body.animate & {
+          animation: dash 3s linear forwards;
+        }
       }
       @keyframes dash {
         to {

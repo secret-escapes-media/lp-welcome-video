@@ -4,6 +4,15 @@
   background-color: $grey-darker;
   text-align: center;
   font-weight: 400;
+  &__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-overlay;
+  }
   &__bgs {
     position: absolute;
     top: 0;
@@ -19,7 +28,7 @@
       right: 0;
       bottom: 0;
       z-index: $z-content-upper;
-      background-color: rgba($grey-darker,.75);
+      background-color: rgba($black,.6);
     }
   }
   &__bg {

@@ -9,7 +9,7 @@ $(document).ready(function(){
       var rawDate = $(this).data('expires');
       var processedDate = rawDate.split("/").reverse().join("/");
 
-      var date = new Date( processedDate );
+      var date = new Date( rawDate );
       var expires = new Date(
         date.getFullYear(),
         date.getMonth(),

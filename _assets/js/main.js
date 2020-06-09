@@ -1,6 +1,15 @@
 // general js for the project that wouldn't be a reuseable component
 
 
+$(document).ready(function(){
+  setTimeout(function(){
+    $('body').addClass('animate');
+  },500);
+});
+
+
+
+
 var modalQueryString = 'fromApp';
 if (getQueryStringByName(modalQueryString)) {
   $('body').addClass('fromApp');
@@ -10,6 +19,9 @@ if (getQueryStringByName(modalQueryString)) {
 $('.js-play').click(function(){
   $('.banner').toggleClass('video-active');
 });
+
+
+
 
 ///////////////////////////////////////
 //    Animate SVG paths
@@ -21,3 +33,4 @@ $('.banner__window-path').each(function(){
   $(this).css({ 'stroke-dasharray': length });
   $(this).css({ 'stroke-dashoffset': length });
 });
+
