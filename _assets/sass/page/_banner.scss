@@ -34,13 +34,11 @@
       align-items: center;
       justify-content: center;
       display: flex;
-      @include bp($lg){
-        &:before {
-          content: "";
-          display: block;
-          width: 100%;
-          padding-top: 66.49240727%;
-        }
+      &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 66.49240727%;
       }
     }
   }
@@ -96,13 +94,9 @@
   // Video
   &__play {
     @include background-attributes;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    border: 4px solid $white;
+    display: none;
     @include bp($lg){
+      display: block;
       position: absolute;
       top: 50%; left: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -183,8 +177,10 @@
     position: absolute;
     top: 0; left: 0;
     right: 0; bottom: 0;
-    display: none;
     box-shadow: 0 0 60px 10px $black;
+    @include bp($lg){
+      display: none;
+    }
   }
 
 }
