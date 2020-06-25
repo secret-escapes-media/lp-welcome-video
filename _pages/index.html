@@ -1,52 +1,26 @@
 ---
 layout: default
 id: welcome-video
-locale: uk
+locale: de
 
 
-title: We can’t wait to welcome you back
+title: Unsere Hotels freuen sich auf Sie!
 
 
 banner:
   title: >
-    <h1 class="h h--xl">We can’t wait to welcome you back</h1>
+    <h1 class="h h--xl">Unsere Hotels freuen sich auf Sie!</h1>
   content: >
-    <p class="p--xxl">As restrictions begin to ease, our thoughts are turning to travel, and while that might not mean today, we're hoping it will be very soon. In preparation for that day, we've reached out to our hotel partners, colleagues and friends to find out what they've missed most, and what they're doing in preparation to welcome you back safely.</p>
+    <p class="p--xxl">Endlich können wir wieder reisen - vor allem unsere Hotelpartner können es kaum erwarten, Sie als Gäste zu begrüßen. In unserem Video haben wir Hotels, Kollegen und Freunde befragt, um herauszufinden, was alle am meisten vermisst haben und wie sich die Unterkünfte mit der neuen Situation arrangiert haben, um Ihnen bei Ihrem Aufenthalt Sicherheit zu bieten. </p>
     <div class="space--md"></div>
-    <a href="javascript:void(0);" class="btn btn--lg js-play-video">Watch now</a>
+    <a href="javascript:void(0);" class="btn btn--lg js-play-video">Jetzt ansehen</a>
 
 
-deals-title: Our hotels are ready & waiting
 
 deals-banner:
-  title: View our selection of refundable deals now
-  content:
-  cta: View deals
-
-
-
-
-articles-intro:
-  title: Peek through the keyhole
-  content: If you'd like to find out more about how our hotels are preparing for your arrival, you can read the full interviews as part of our new 'Through the keyhole' series on our magazine.
-
-articles:
-
-  - image: https://www.secretescapes.com/magazine-uk/wp-content/uploads/2020/06/main-1.jpg
-    title: Bishopstrow Hotel & Spa
-    content: We chat to Mark Bevan about how his role as GM has profoundly changed. He is now focused on making sure that the hotel is safe and secure along with redecorating as much as they can to be pristine and ready to welcome guests back.
-    link: https://www.secretescapes.com/magazine-uk/through-the-keyhole-bishopstrow-hotel-spa/
-
-  - image: https://www.secretescapes.com/magazine-uk/wp-content/uploads/2020/06/Another-Place-The-Lake-From-Above-%C2%A9Nicodem-Creative-1.jpg
-    title: Another Place & Watergate Bay
-    content: Meet Judi Blakeburn, the brand director at Watergate Bay Hotel and Another Place delivering the brand strategy, marketing, sales and guest experience.
-    link: https://www.secretescapes.com/magazine-uk/through-the-keyhole-another-place-watergate-bay-hotel/
-
-  - image: https://www.secretescapes.com/magazine-uk/wp-content/uploads/2020/06/20100208_5-1-min.jpg
-    title: Salthouse Harbour Hotel
-    content: People are more appreciative of travel now. Up until recently, people had the freedom to go wherever and whenever they wanted anywhere in the world, as long as they had the means.
-    link: https://www.secretescapes.com/magazine-uk/through-the-keyhole-salthouse-harbour-hotel/
-
+  title: Entdecken Sie jetzt unsere stornierbaren Angebote
+  link: https://www.secretescapes.de/stornierbar/filter
+  cta: Zu den Angeboten
 
 
 ---
@@ -59,13 +33,6 @@ articles:
 
 <div class="bg--grey-lightest vpad--xxl">
 <div class="container">
-
-  <div class="row">
-    <div class="col col--9 text--center">
-      <h2 class="h h--md">{{page.deals-title}}</h2>
-    </div>
-  </div>
-  <div class="space--lg"></div>
 
   <div class="row row--6-6">
   {% for offer in site.data.offers %}
@@ -81,39 +48,6 @@ articles:
 </div> <!-- /.container -->
 </div> <!-- /.bg--grey-lightest -->
 
-<div class="bg--white vpad--xxl">
-  <div class="container">
-
-    <div class="row">
-      <div class="col col--9 text--center">
-        <h2 class="h h--md">{{page.articles-intro.title}}</h2>
-        <p class="p--xl">{{page.articles-intro.content}}</p>
-      </div>
-    </div>
-    <div class="space--lg"></div>
-    <div class="row">
-    {% for article in page.articles %}
-      <div class="col col--xl-4">
-        <div class="img img--16-9" style="background-image: url({{article.image}});">
-          <a href="{{article.link}}" class="img__link"></a>
-        </div>
-        <div class="space--sm"></div>
-        <h3 class="h h--xxs">{{article.title}}</h3>
-        <p>{{article.content}}</p>
-        <p class="text--bold"><a href="{{article.link}}">Continue reading</a></p>
-      </div>
-    {% endfor %}
-    </div>
-
-    <div class="space--xl"></div>
-
-    <div class="text--center">
-      <a href="https://www.secretescapes.com/magazine-uk/" target="_blank" class="btn">Read more</a>
-    </div>
-
-  </div>
-</div><!-- /.container -->
-</div><!-- /.hideApp -->
-
 {% include nav/footer.html %}
-</div> <!-- /.bg--grey-lightest -->
+
+</div><!-- /.hideApp -->

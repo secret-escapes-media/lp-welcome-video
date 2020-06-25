@@ -1,15 +1,15 @@
 # Site settings
 title: Secret Escapes
-locale: uk
+locale: de
 
-description: As restrictions begin to ease, our thoughts are turning to travel, and while that might not mean today, we're hoping it will be very soon. In preparation for that day, we've reach out to our hotel partners, colleagues and friends to find out what they've missed most, and what they're doing in preparation to welcome you back safely.
+description: Endlich können wir wieder reisen - vor allem unsere Hotelpartner können es kaum erwarten, Sie als Gäste zu begrüßen. In unserem Video haben wir Hotels, Kollegen und Freunde befragt, um herauszufinden, was alle am meisten vermisst haben und wie sich die Unterkünfte mit der neuen SItuation arrangiert haben, um Ihnen bei Ihrem Aufenthalt Sicherheit zu bieten.
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/uk/2020/welcome-back" # the subpath of your site, e.g. /blog/
-img:     "/uk/2020/welcome-back/_assets/img"
-css:     "/uk/2020/welcome-back/_assets/css"
-js:      "/uk/2020/welcome-back/_assets/js"
+baseurl: "/de/2020/welcome-back" # the subpath of your site, e.g. /blog/
+img:     "/de/2020/welcome-back/_assets/img"
+css:     "/de/2020/welcome-back/_assets/css"
+js:      "/de/2020/welcome-back/_assets/js"
 
 
 # Build settings

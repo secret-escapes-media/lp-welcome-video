@@ -1,10 +1,9 @@
 <div class="offer depth--sm depth--sm-hover rounded--sm">
 
-  <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">View Offer</span></a>
+  <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">{{locale.offer.view-offer}}</span></a>
 
   <div class="img img--16-9" style="background-image: url('{{offer.image}}')">
 
-    <div class="offer__expires js-offer-expires p--sm" data-expires="{{offer.expires}}"></div>
   </div>
 
   <div class="boxpad--md">
@@ -20,8 +19,8 @@
 
         <div class="offer__details">
           <p>
-            From
-            <span class="offer__price">£{{offer.price}}</span>
+            {{locale.offer.from}}
+            <span class="offer__price">{{locale.offer.currency}}{{offer.price}}</span>
             {{offer.price-description}}
           </p>
         </div>

@@ -1,6 +1,14 @@
 
 in-partnership: In Zusammenarbeit mit
 
+offer:
+  from: Ab
+  ending-in:
+  view-offer: Zum Angebot
+  currency: €
+
+
+
 core-site: https://www.secretescapes.de/aktuelle-angebote
 core-favourites:
   link: https://www.secretescapes.de/meine-favoriten

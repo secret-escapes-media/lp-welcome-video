@@ -1,6 +1,15 @@
 
 in-partnership: In partnership with
 
+offer:
+  from: From
+  ending-in:
+  view-offer: View offer
+  currency: £
+
+
+
+
 core-site: https://www.secretescapes.com/current-sales
 core-favourites:
   link: https://www.secretescapes.com/my-favourites

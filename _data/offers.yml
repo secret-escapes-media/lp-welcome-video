@@ -1,41 +1,40 @@
 
-- title: Refined Wiltshire stately home stay - Fully refundable
-  location: Bishopstrow Hotel & Spa, Warminster
-  description: Historic hotel in Wiltshire's fresh countryside
-  price: 139
-  price-description: per room per night
-  saved: 61
-  expires: 2020/06/26
-  image: https://secretescapes-web.imgix.net/hotels/243/f16abf85_ea99_4721_af34_bed4373842cf.jpg?auto=format,compress
-  link: https://www.secretescapes.com/bishopstrow-hotel-and-spa-warminster/sale-hotel
+- title: Tiefenentspannung in Tirol - Kostenfrei stornierbar
+  location: Linde Gartenhotel, Ried in Tirol, Österreich
+  description: Tiroler Alpenglück – inkl. Verwöhnpension, Spa-Zugang, Wellness-Gutschein & Extras
+  price: 206
+  price-description: pro Zimmer pro Nacht
+  saved: 19
+  expires: 2020/08/05
+  image: https://secretescapes-web.imgix.net/hotels/303/34cf9ae9_6828_4e25_a237_443c4a0f0da3.jpg?auto=format,compress
+  link: https://www.secretescapes.de/tiefenentspannung-in-tirol-kostenfrei-stornierbar-linde-gartenhotel-ried-in-tirol-osterreich/sale-hotel
 
-- title: Boutique waterfront Ipswich stay - Fully refundable
-  location: Salthouse Harbour Hotel, Suffolk
-  description: Designer Ipswich harbour hotel
-  price: 99
-  price-description: per room per night
-  saved: 59
-  expires: 2020/07/27
-  image: https://secretescapes-web.imgix.net/hotels/245/c86ff7be_c052_4883_b9cc_6f51d3c224b4.jpg?auto=format,compress
-  link: https://www.secretescapes.com/salthouse-harbour-hotel-fully-refundable-ipswich-suffolk-united-kingdom/sale-hotel
+- title: Wellnessoase in Tirol - Kostenfrei stornierbar
+  location: Der Alpbacherhof, Alpbach, Tirol, Österreich
+  description: Genussvolle Erholung in den Tiroler Alpen – inkl. 3/4-Verwöhnpension & vielen Extras
+  price: 229
+  price-description: pro Zimmer pro Nacht
+  saved: 22
+  expires: 2020/08/03
+  image: https://secretescapes-web.imgix.net/hotels/290/10ee053d_11ff_4907_b82e_8d41eb25bf66.jpg?auto=format,compress
+  link: https://www.secretescapes.de/wellnessoase-in-tirol-kostenfrei-stornierbar-der-alpbacherhof-alpbach-tirol-osterreich/sale-hotel
 
-- title: Award-winning St Ives beachfront spa hotel - Fully refundable
-  location: Carbis Bay Hotel & Estate, Cornwall
-  description: Award-winning waterfront hotel in the picturesque town of St Ives
-  price: 129
-  price-description: per room per night
-  saved: 59
-  expires: 2020/07/20
-  image: https://secretescapes-web.imgix.net/hotels/242/de08f9b1_189a_43ce_8bf8_3e688f584e3f.jpg?auto=format,compress
-  link: https://www.secretescapes.com/carbis-bay-hotel-and-estate-cornwall/sale-hotel
+- title: Alpenglück in St. Johann - Kostenfrei stornierbar
+  location: COOEE alpin Hotel Kitzbüheler Alpen, St. Johann in Tirol, Österreich
+  description: Wellness & Kulinarik – inkl. Frühstück oder Halbpension, Sauna-Zugang & Extras
+  price: 69
+  price-description: pro Zimmer pro Nacht
+  saved: 36
+  expires: 2021/06/20
+  image: https://secretescapes-web.imgix.net/hotels/348/1abc8c71_8c2f_47bc_87fe_f643ec23615d.jpg?auto=format,compress
+  link: https://www.secretescapes.de/alpenglueck-in-st-johann-kostenfrei-stornierbar-cooee-alpin-hotel-kitzbueheler-alpen-st-johann-in-tirol-osterreich/sale-hotel
 
-- title: Laura Ashley-designed Lake District hotel - Fully refundable
-  location: Laura Ashley Hotel - The Belsfield, Bowness-on-Windermere
-  description: Chic Laura Ashley-designed Lake District stay
-  price: 139
-  price-description: per room per night
-  saved: 49
-  expires: 2020/08/10
-  image: https://secretescapes-web.imgix.net/hotels/294/3a754954_9786_4a5f_b65d_2d52afe5cf64.jpg?auto=format,compress
-  link: https://www.secretescapes.com/laura-ashley-hotel-the-belsfield-fully-refundable-bowness-on-windermere-lake-district/sale-hotel
-
+- title: Hyatt-Luxus in Hamburg - Kostenfrei stornierbar
+  location: Park Hyatt Hamburg, Deutschland
+  description: Im Herzen der Hamburger Altstadt – inkl. opt. Frühstück, Fitness-Zugang & WLAN-Nutzung
+  price: 159
+  price-description: pro Unterkunft pro Nacht
+  saved: 35
+  expires: 2020/08/31
+  image: https://secretescapes-web.imgix.net/hotels/288/185d8bd2_d685_4d1c_b0e3_44c20e1dcfe6.jpg?auto=format,compress
+  link: https://www.secretescapes.de/hyatt-luxus-in-hamburg-kostenfrei-stornierbar-park-hyatt-hamburg-deutschland-de/sale-hotel
