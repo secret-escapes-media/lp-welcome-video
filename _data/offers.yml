@@ -1,4 +1,34 @@
 
+- title: Wellness-Hotel im Allgäu - Kostenfrei stornierbar
+  location: Das Weitblick Allgäu, Marktoberdorf, Allgäuer Voralpenland, Bayern, Deutschland
+  description: Wellnessurlaub im malerischen Vorallgäu – inkl. Halbpension, Begrüßungsgetränk & Extras
+  price: 203
+  price-description: pro Zimmer pro Nacht
+  saved: 34
+  expires: 2020/08/10
+  image: https://secretescapes-web.imgix.net/hotels/296/8e0b2c93_d39a_431b_ab2a_1714fb877c9a.jpg?auto=format,compress
+  link: https://www.secretescapes.de/wellness-hotel-im-allgaeu-kostenfrei-stornierbar-das-weitblick-allgaeu-marktoberdorf-allgaeuer-voralpenland-bayern-deutschland/sale-hotel
+
+- title: "Neueröffnung: Urban-Chic am Rhein - Kostenfrei stornierbar"
+  location: Papa Rhein Hotel, Bingen am Rhein, Rheinland-Pfalz, Deutschland
+  description: Mit herrlichem Blick auf den Rhein nächtigen – inkl. Frühstück & Parkplatz
+  price: 139
+  price-description: pro Zimmer pro Nacht
+  saved: 18
+  expires: 2020/08/24
+  image: https://secretescapes-web.imgix.net/hotels/271/26207d0c_0765_425b_86f5_4774b58bb4d3.jpg?auto=format,compress
+  link: https://www.secretescapes.de/neueroffnung-urban-chic-am-rhein-kostenfrei-stornierbar-papa-rhein-hotel-bingen-am-rhein-rheinland-pfalz-deutschland/sale-hotel
+
+- title: Wellness-Auszeit in Bayern - Kostenfrei stornierbar
+  location: Panorama Hotel Oberjoch, Bad Hindelang, Oberallgäu, Bayern, Deutschland
+  description: Panoramasicht, Wohlgefühl & feinste Kulinarik im Allgäu – inkl. Halbpension & Extras
+  price: 229
+  price-description: pro Zimmer pro Nacht
+  saved: 51
+  expires: 2020/08/04
+  image: https://secretescapes-web.imgix.net/hotels/298/ae2e5b93_27fa_4efb_8f3e_99f6c1d8c6e1.jpg?auto=format,compress
+  link: https://www.secretescapes.de/wellness-auszeit-in-bayern-kostenfrei-stornierbar-panorama-hotel-oberjoch-bad-hindelang-oberallgaeu-bayern-deutschland/sale-hotel
+
 - title: Tiefenentspannung in Tirol - Kostenfrei stornierbar
   location: Linde Gartenhotel, Ried in Tirol, Österreich
   description: Tiroler Alpenglück – inkl. Verwöhnpension, Spa-Zugang, Wellness-Gutschein & Extras
@@ -9,32 +39,4 @@
   image: https://secretescapes-web.imgix.net/hotels/303/34cf9ae9_6828_4e25_a237_443c4a0f0da3.jpg?auto=format,compress
   link: https://www.secretescapes.de/tiefenentspannung-in-tirol-kostenfrei-stornierbar-linde-gartenhotel-ried-in-tirol-osterreich/sale-hotel
 
-- title: Wellnessoase in Tirol - Kostenfrei stornierbar
-  location: Der Alpbacherhof, Alpbach, Tirol, Österreich
-  description: Genussvolle Erholung in den Tiroler Alpen – inkl. 3/4-Verwöhnpension & vielen Extras
-  price: 229
-  price-description: pro Zimmer pro Nacht
-  saved: 22
-  expires: 2020/08/03
-  image: https://secretescapes-web.imgix.net/hotels/290/10ee053d_11ff_4907_b82e_8d41eb25bf66.jpg?auto=format,compress
-  link: https://www.secretescapes.de/wellnessoase-in-tirol-kostenfrei-stornierbar-der-alpbacherhof-alpbach-tirol-osterreich/sale-hotel
 
-- title: Alpenglück in St. Johann - Kostenfrei stornierbar
-  location: COOEE alpin Hotel Kitzbüheler Alpen, St. Johann in Tirol, Österreich
-  description: Wellness & Kulinarik – inkl. Frühstück oder Halbpension, Sauna-Zugang & Extras
-  price: 69
-  price-description: pro Zimmer pro Nacht
-  saved: 36
-  expires: 2021/06/20
-  image: https://secretescapes-web.imgix.net/hotels/348/1abc8c71_8c2f_47bc_87fe_f643ec23615d.jpg?auto=format,compress
-  link: https://www.secretescapes.de/alpenglueck-in-st-johann-kostenfrei-stornierbar-cooee-alpin-hotel-kitzbueheler-alpen-st-johann-in-tirol-osterreich/sale-hotel
-
-- title: Hyatt-Luxus in Hamburg - Kostenfrei stornierbar
-  location: Park Hyatt Hamburg, Deutschland
-  description: Im Herzen der Hamburger Altstadt – inkl. opt. Frühstück, Fitness-Zugang & WLAN-Nutzung
-  price: 159
-  price-description: pro Unterkunft pro Nacht
-  saved: 35
-  expires: 2020/08/31
-  image: https://secretescapes-web.imgix.net/hotels/288/185d8bd2_d685_4d1c_b0e3_44c20e1dcfe6.jpg?auto=format,compress
-  link: https://www.secretescapes.de/hyatt-luxus-in-hamburg-kostenfrei-stornierbar-park-hyatt-hamburg-deutschland-de/sale-hotel
